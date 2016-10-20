@@ -68,6 +68,9 @@ sudo dd of=/etc/hosts <<EOF
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 EOF
+sudo dd of=/etc/hostname <<EOF
+babbage
+EOF
 sudo hostname babbage
 
 # setting up apache2 default site
